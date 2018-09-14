@@ -303,7 +303,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ImageTargetMesh12030
+  m_Name: ImageTargetMesh14936
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -565,7 +565,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: 'aeroposta_vuforiaMaterial
 
-    12040'
+    14946'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -605,13 +605,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1557643280}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.097, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
+  m_LocalPosition: {x: 0.096999995, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 688420388}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1627175914
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,13 +633,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1627175914}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.114, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
+  m_LocalPosition: {x: -1.1139998, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 688420388}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1964602097
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +651,8 @@ GameObject:
   - component: {fileID: 1964602098}
   - component: {fileID: 1964602100}
   - component: {fileID: 1964602099}
+  - component: {fileID: 1964602102}
+  - component: {fileID: 1964602101}
   m_Layer: 0
   m_Name: Avion
   m_TagString: Untagged
@@ -666,8 +668,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1964602097}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.012626262, y: 0.012626262, z: 0.012626262}
+  m_LocalPosition: {x: 0, y: 0.14949495, z: 0}
+  m_LocalScale: {x: 0.025252525, y: 0.025252525, z: -0.025252525}
   m_Children: []
   m_Father: {fileID: 688420388}
   m_RootOrder: 2
@@ -718,3 +720,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1964602097}
   m_Mesh: {fileID: 4300000, guid: 3a2adf341a285534c900f2e3523897f4, type: 3}
+--- !u!114 &1964602101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964602097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8cb587c165c39b4091bc941dc0469aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypints:
+  - {fileID: 1557643280}
+  - {fileID: 1627175914}
+  num: 0
+  minDis: 1
+  speed: 30
+  rand: 0
+  go: 1
+--- !u!54 &1964602102
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964602097}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
